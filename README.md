@@ -16,6 +16,7 @@
     - H2 Database
     - Hibernate Core
     - Hibernate Validation
+    - Lombok
 
 ### **Why Spring Boot**
 * Extension layer of the Spring Framework
@@ -49,7 +50,11 @@
 * https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation
 
 ## **Loggers**
-* 
+* to log requests
+
+## **Lombok**
+* remove removal of boilerplate code and adds it at compilation time
+
 *******************
 ### ****
 * 

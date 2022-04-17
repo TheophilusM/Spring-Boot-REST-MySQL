@@ -1,5 +1,9 @@
 package com.example.demo.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -13,6 +17,11 @@ import javax.validation.constraints.Positive;
 import javax.validation.constraints.Size;
 
 @Entity // so it can interact with the database
+@Data
+//@Getter  - to get specifics, instead of @Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder // builder pattern
 public class Department {
 
     @Id
@@ -30,6 +39,8 @@ public class Department {
     private String departmentAddress;
     private String departmentCode;
 
+    // boilerplate replace with Lombok
+    /*
     public Department(Long departmentId, String departmentName, String departmentAddress, String departmentCode) {
         this.departmentId = departmentId;
         this.departmentName = departmentName;
@@ -80,4 +91,5 @@ public class Department {
     public void setDepartmentCode(String departmentCode) {
         this.departmentCode = departmentCode;
     }
+     */
 }
