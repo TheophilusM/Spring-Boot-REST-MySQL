@@ -24,9 +24,9 @@
     - Spring Boot Actuator
 
 ## **End-Points**
-* POST
+* **`POST`**
     - Save A Department
-* GET
+* **`GET`**
     - Welcome message
         - _{{BASE_URL}}/_ 
     - Get All Departments
@@ -37,10 +37,10 @@
         - _{{BASE_URL}}/departments/name/:name_
     - Get One Dept ByAddress
         - _{{BASE_URL}}/departments/address/:address_
-* DEL
+* **`DEL`**
     - Delete A Department
         - _{{BASE_URL}}/departments/delete/:id_
-* PUT
+* **`PUT`**
     - Update A Department
         - _{{BASE_URL}}/departments/update/:id_
 
