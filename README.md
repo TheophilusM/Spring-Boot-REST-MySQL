@@ -15,6 +15,7 @@
     - Spring Data JPA
     - H2 Database
     - Hibernate Core
+    - Hibernate Validation
 
 ### **Why Spring Boot**
 * Extension layer of the Spring Framework
@@ -40,7 +41,13 @@
 * Database
     - H2 Database
     - MySQL
-	
+
+## **Spring Boot Dev Dependency**
+* to auto reload server
+
+# **JPA Query Selection**
+* https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation
+* 
 *******************
 ### ****
 * 

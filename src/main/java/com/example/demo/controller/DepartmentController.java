@@ -6,6 +6,7 @@ import com.example.demo.service.DepartmentServiceImplementation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -18,7 +19,7 @@ public class DepartmentController {
     }
 
     @PostMapping("/departments/save")
-    public Department saveDepartment(@RequestBody Department department) { // convert request body into department object
+    public Department saveDepartment(@Valid @RequestBody Department department) { // convert request body into department object
         return departmentService.saveDepartment(department);
     }
 
@@ -46,5 +47,10 @@ public class DepartmentController {
     @GetMapping("/departments/name/{name}")
     public Department getDepartmentByName(@PathVariable("name") String departmentName) {
         return departmentService.getDepartmentByName(departmentName);
+    }
+
+    @GetMapping("/departments/address/{address}")
+    public Department getDepartmentByAddress(@PathVariable("address") String departmentAddress) {
+        return departmentService.getDepartmentByAddress(departmentAddress);
     }
 }
