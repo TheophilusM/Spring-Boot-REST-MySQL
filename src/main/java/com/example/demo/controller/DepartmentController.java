@@ -1,12 +1,10 @@
 package com.example.demo.controller;
 
 import com.example.demo.entity.Department;
-import com.example.demo.error.DepartmentNotFound;
+import com.example.demo.error.DepartmentNotFoundException;
 import com.example.demo.service.DepartmentService;
-import com.example.demo.service.DepartmentServiceImplementation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -36,7 +34,7 @@ public class DepartmentController {
     }
 
     @GetMapping("/departments/one/{id}")
-    public Department getDepartment(@PathVariable("id") Long departmentId) throws DepartmentNotFound {
+    public Department getDepartment(@PathVariable("id") Long departmentId) throws DepartmentNotFoundException {
         logger.info("Get one department");
         return departmentService.getDepartment(departmentId);
     }
