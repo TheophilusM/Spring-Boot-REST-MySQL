@@ -33,7 +33,7 @@
 * Inversion of Control (IOC) by the Spring Framework
 * Creates all objects or beans for the application stored in the spring container
 
-# **Architecture Structure**
+## **Architecture Structure**
 * Controller layer
 * Service Layer
 * Data Access/Repository Layer
@@ -45,8 +45,10 @@
 ## **Spring Boot Dev Dependency**
 * to auto reload server
 
-# **JPA Query Selection**
+## **JPA Query Selection**
 * https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#jpa.query-methods.query-creation
+
+## **Loggers**
 * 
 *******************
 ### ****
