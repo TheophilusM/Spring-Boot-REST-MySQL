@@ -1,7 +1,7 @@
-## **To tun app**
+## **To run app**
 * `mvn spring-boot:run`
 
-### **Software stack**
+## **Software stack**
 * Java 11
 * Maven 3+
 * IntelliJ IDEA Ultimate
@@ -23,7 +23,28 @@
     - Junit and Mockito
     - Spring Boot Actuator
 
-### **Why Spring Boot**
+## **End-Points**
+* POST
+    - Save A Department
+* GET
+    - Welcome message
+        - _{{BASE_URL}}/_ 
+    - Get All Departments
+        - _{{BASE_URL}}/departments/all_
+    - Get One Department
+        - _{{BASE_URL}}/departments/one/:id_
+    - Get One Dept ByName
+        - _{{BASE_URL}}/departments/name/:name_
+    - Get One Dept ByAddress
+        - _{{BASE_URL}}/departments/address/:address_
+* DEL
+    - Delete A Department
+        - _{{BASE_URL}}/departments/delete/:id_
+* PUT
+    - Update A Department
+        - _{{BASE_URL}}/departments/update/:id_
+
+## **Why Spring Boot**
 * Extension layer of the Spring Framework
 * Rapid application development
 * Dependency Injection
@@ -65,8 +86,6 @@
 * Using junit and mockito
 * Testing the controller, service and repository layer
 * Mocking other layer's functionality
-* Service Layer
-    - 
 
 ## **Exception handling**
 ** custom response error
@@ -95,4 +114,3 @@
 * _/actuator_
 * can override details returned by endpoints
 * can create new endpoints
-* 

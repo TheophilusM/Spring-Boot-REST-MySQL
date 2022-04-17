@@ -19,8 +19,8 @@ public class FeatureEndpoint {
 
     public FeatureEndpoint() {
         featureMap.put("Department", new Feature(true));
-        featureMap.put("User", new Feature(true));
-        featureMap.put("Authentication", new Feature(true));
+        featureMap.put("User", new Feature(false));
+        featureMap.put("Authentication", new Feature(false));
     }
 
     @ReadOperation

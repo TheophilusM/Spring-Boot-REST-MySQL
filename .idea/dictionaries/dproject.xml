@@ -2,6 +2,7 @@
   <dictionary name="dproject">
     <words>
       <w>companydb</w>
+      <w>ibatis</w>
       <w>projectlombok</w>
     </words>
   </dictionary>
