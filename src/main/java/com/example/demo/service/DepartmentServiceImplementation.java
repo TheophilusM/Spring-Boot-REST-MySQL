@@ -16,8 +16,6 @@ public class DepartmentServiceImplementation implements DepartmentService {
         this.departmentRepository = departmentRepository;
     }
 
-
-
     @Override
     public Department saveDepartment(Department department) {
         return departmentRepository.save(department);
@@ -55,6 +53,12 @@ public class DepartmentServiceImplementation implements DepartmentService {
             departmentDB.setDepartmentCode(department.getDepartmentCode());
         }
         return departmentRepository.save(departmentDB);
+    }
+
+
+    @Override
+    public Department getDepartmentByName(String departmentName) {
+        return departmentRepository.findByDepartmentName(departmentName);
     }
 
 
