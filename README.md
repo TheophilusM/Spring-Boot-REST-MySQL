@@ -19,6 +19,7 @@
     - Hibernate Core
     - Hibernate Validation
     - Lombok
+    - Junit and Mockito
 
 ### **Why Spring Boot**
 * Extension layer of the Spring Framework
@@ -26,8 +27,8 @@
 * Dependency Injection
 * Spring Aspect Oriented Programming
 * dependencies starter template
-* testing staerter template
-* auto-configuration of any implimentations
+* testing starter template
+* auto-configuration of any implementations
 * embedded servers
 * microservices architecture
 
@@ -44,6 +45,7 @@
 * Database
     - H2 Database
     - MySQL
+* Repository
 
 ## **Spring Boot Dev Dependency**
 * to auto reload server
@@ -57,8 +59,16 @@
 ## **Lombok**
 * remove removal of boilerplate code and adds it at compilation time
 
+## **Unit testing**
+* Using junit and mockito
+* Testing the controller, service and repository layer
+* Mocking other layer's functionality
+* Service Layer
+    - 
+
 ## **Exception handling**
 ** custom response error
+
 *******************
 ### ****
 * 
