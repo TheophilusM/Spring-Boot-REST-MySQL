@@ -31,14 +31,15 @@ class DepartmentServiceTest {
                 .departmentId(1L)
                 .build();
 
-        Mockito.when(departmentRepository.findByDepartmentAddressIgnoreCase("Software"))
+        Mockito.when(departmentRepository.findByDepartmentName("Software"))
                 .thenReturn(department);
     }
 
     @Test
     public void whenValidDepartmentName_thenDepartmentShouldFound() {
         String departmentName = "Software";
-        Department found = departmentService.getDepartmentByName(departmentName);
+        Department found =
+                departmentService.getDepartmentByName(departmentName);
 
         assertEquals(departmentName, found.getDepartmentName());
 

@@ -1,3 +1,13 @@
+server:
+  port: '8082'
+
+spring:
+  profiles:
+    active: live
+
+# using profiles
+---
+
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -7,7 +17,82 @@ spring:
   jpa:
     hibernate:
       ddl-auto: update
+  config:
+    activate:
+      on-profile: live
 welcome:
   message: Welcome to Spring Boot REST APIs
-server:
-  port: '8082'
+
+---
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
+    url: jdbc:mysql://localhost:3306/companydb-prod
+    password: adminPassword123@
+  jpa:
+    hibernate:
+      ddl-auto: update
+  config:
+    activate:
+      on-profile: prod
+welcome:
+  message: Welcome to Spring Boot REST APIs
+
+---
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
+    url: jdbc:mysql://localhost:3306/companydb-dev
+    password: adminPassword123@
+  jpa:
+    hibernate:
+      ddl-auto: update
+  config:
+    activate:
+      on-profile: dev
+welcome:
+  message: Welcome to Spring Boot REST APIs
+
+---
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
+    url: jdbc:mysql://localhost:3306/companydb-test
+    password: adminPassword123@
+  jpa:
+    hibernate:
+      ddl-auto: update
+  config:
+    activate:
+      on-profile: test
+welcome:
+  message: Welcome to Spring Boot REST APIs
+
+---
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: sa
+    url: jdbc:h2:mem:./test;
+    password: password
+  h2:
+    console:
+      enabled: 'true'
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties:
+      hibernate:
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: 'true'
+  config:
+    activate:
+      on-profile: h2db

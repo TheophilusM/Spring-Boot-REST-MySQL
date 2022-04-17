@@ -1,7 +1,7 @@
-## **to tun app**
+## **To tun app**
 * `mvn spring-boot:run`
 
-### **Software...**
+### **Software stack**
 * Java 11
 * Maven 3+
 * IntelliJ IDEA Ultimate
@@ -10,6 +10,7 @@
 * Postman
 * MySQL Workbench
 * MySQL Server
+* Maven
 * Dependencies
     - Spring Framework
     - Spring Web
@@ -73,68 +74,15 @@
 * more readable
 * can convert application properties to yml using plugins
 
-*******************
-### ****
-* 
-	- 
-## ****
-* 
-	- 
-# ****
-* 
-	- 
-	
-*******************
-### ****
-* 
-	- 
-## ****
-* 
-	- 
-# ****
-* 
-	- 
+## **Profiles**
+* Environments considerations
+    - Development
+    - Production
+    - Test 
+    - ... 
+* Using profiles
 
-*******************
-### ****
+## **Run in production env**
+* Define app versions
+* `mvn clean install`
 * 
-	- 
-## ****
-* 
-	- 
-# ****
-* 
-	- 
-
-*******************
-### ****
-* 
-	- 
-## ****
-* 
-	- 
-# ****
-* 
-	- 
-
-*******************
-### ****
-* 
-	- 
-## ****
-* 
-	- 
-# ****
-* 
-	- 
-
-*******************
-### ****
-* 
-	- 
-## ****
-* 
-	- 
-# ****
-* 
-	- 
