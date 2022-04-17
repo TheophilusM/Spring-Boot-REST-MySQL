@@ -1,10 +1,16 @@
 package com.example.demo.entity;
 
+import org.hibernate.validator.constraints.Length;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Positive;
+import javax.validation.constraints.Size;
 
 @Entity // so it can interact with the database
 public class Department {
@@ -13,8 +19,14 @@ public class Department {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long departmentId;
 
-    @NotBlank(message = "Please Add Department Name")
+    @NotBlank(message = "Please add the department name")
+    //    @Length(max = 10, min = 2, message = "Invalid length")
+    //    @Size(max = 10, min = 0)
+    //    @Email
+    //    @Positive
+    //    @DateTimeFormat ... validations
     private String departmentName;
+
     private String departmentAddress;
     private String departmentCode;
 
