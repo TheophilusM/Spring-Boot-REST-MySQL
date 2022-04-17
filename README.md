@@ -8,6 +8,8 @@
 * MySQL Server and Workbench
 * H2 Database
 * Postman
+* MySQL Workbench
+* MySQL Server
 * Dependencies
     - Spring Framework
     - Spring Web
@@ -56,7 +58,7 @@
 * remove removal of boilerplate code and adds it at compilation time
 
 ## **Exception handling**
-** 
+** custom response error
 *******************
 ### ****
 * 
