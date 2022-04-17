@@ -1,7 +1,17 @@
 package com.example.demo.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity // so it can interact with the database
 public class Department {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long departmentId;
+
     private String departmentName;
     private String departmentAddress;
     private String departmentCode;
@@ -12,6 +22,18 @@ public class Department {
         this.departmentAddress = departmentAddress;
         this.departmentCode = departmentCode;
     }
+
+    @Override
+    public String toString() {
+        return "Department{" +
+                "departmentId=" + departmentId +
+                ", departmentName='" + departmentName + '\'' +
+                ", departmentAddress='" + departmentAddress + '\'' +
+                ", departmentCode='" + departmentCode + '\'' +
+                '}';
+    }
+
+    public Department() { }
 
     public Long getDepartmentId() {
         return departmentId;
