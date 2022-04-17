@@ -22,7 +22,12 @@ spring:
       on-profile: live
 welcome:
   message: Welcome to Spring Boot REST APIs
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#    jmx: can enable for jmx
 ---
 
 spring:

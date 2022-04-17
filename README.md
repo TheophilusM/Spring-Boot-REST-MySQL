@@ -21,6 +21,7 @@
     - Hibernate Validation
     - Lombok
     - Junit and Mockito
+    - Spring Boot Actuator
 
 ### **Why Spring Boot**
 * Extension layer of the Spring Framework
@@ -85,4 +86,13 @@
 ## **Run in production env**
 * Define app versions
 * `mvn clean install`
+* `cd target`
+* run: `java -jar SpringBoot-1.0.0.jar --spring.profiles.active=live`
+
+## **Actuator**
+* Should be behind spring security
+* To monitor the application
+* _/actuator_
+* can override details returned by endpoints
+* can create new endpoints
 * 
