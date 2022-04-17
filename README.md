@@ -55,6 +55,8 @@
 ## **Lombok**
 * remove removal of boilerplate code and adds it at compilation time
 
+## **Exception handling**
+** 
 *******************
 ### ****
 * 

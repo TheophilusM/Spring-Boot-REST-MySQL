@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.entity.Department;
+import com.example.demo.error.DepartmentNotFound;
 import com.example.demo.service.DepartmentService;
 import com.example.demo.service.DepartmentServiceImplementation;
 import org.slf4j.Logger;
@@ -35,7 +36,7 @@ public class DepartmentController {
     }
 
     @GetMapping("/departments/one/{id}")
-    public Department getDepartment(@PathVariable("id") Long departmentId) {
+    public Department getDepartment(@PathVariable("id") Long departmentId) throws DepartmentNotFound {
         logger.info("Get one department");
         return departmentService.getDepartment(departmentId);
     }
