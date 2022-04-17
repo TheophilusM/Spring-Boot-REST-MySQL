@@ -1,7 +1,7 @@
 ## **to tun app**
 * `mvn spring-boot:run`
 
-### **Software**
+### **Software...**
 * Java 11
 * Maven 3+
 * IntelliJ IDEA Ultimate
@@ -68,6 +68,10 @@
 
 ## **Exception handling**
 ** custom response error
+
+## **Application YAML File**
+* more readable
+* can convert application properties to yml using plugins
 
 *******************
 ### ****

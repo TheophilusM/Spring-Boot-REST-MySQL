@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: admin
+    url: jdbc:mysql://localhost:3306/companydb
+    password: adminPassword123@
+  jpa:
+    hibernate:
+      ddl-auto: update
+welcome:
+  message: Welcome to Spring Boot REST APIs
+server:
+  port: '8082'
